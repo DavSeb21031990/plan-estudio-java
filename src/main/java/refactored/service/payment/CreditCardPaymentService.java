@@ -1,14 +1,20 @@
 package refactored.service.payment;
 
-public class CreditCardPaymentService implements IPaymentService {
-    @Override
-    public boolean processPayment(double amount) {
-        System.out.println("Processing $" + amount + " via Credit Card");
-        return true;
-    }
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-    @Override
-    public String getPaymentMethod() {
-        return "Credit Card";
-    }
+public class CreditCardPaymentService implements IPaymentService {
+
+  private static final Logger LOGGER = LoggerFactory.getLogger(CreditCardPaymentService.class);
+
+  @Override
+  public boolean processPayment(double amount) {
+    LOGGER.info("Processing $ {} via Credit Card", amount);
+    return true;
+  }
+
+  @Override
+  public String getPaymentMethod() {
+    return "Credit Card";
+  }
 }

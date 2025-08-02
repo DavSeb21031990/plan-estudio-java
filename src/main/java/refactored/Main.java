@@ -1,5 +1,7 @@
 package refactored;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import refactored.repository.order.DatabaseOrderRepository;
 import refactored.repository.order.IOrderRepository;
 import refactored.service.email.IEmailService;
@@ -13,35 +15,37 @@ import refactored.service.tax.StandardTaxCalculatorService;
 
 public class Main {
 
-    public static void main(String[] args) {
+  private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
-        ITaxCalculatorService calculator = new StandardTaxCalculatorService();
-        IPaymentService paymentStrategy = new CreditCardPaymentService();
-        IOrderRepository repository = new DatabaseOrderRepository();
-        IEmailService emailService = new SMTPEmailService();
+  public static void main(String[] args) {
 
-        OrderService service = new OrderService(
-                calculator,
-                repository,
-                emailService,
-                paymentStrategy
-        );
+    ITaxCalculatorService calculator = new StandardTaxCalculatorService();
+    IPaymentService paymentStrategy = new CreditCardPaymentService();
+    IOrderRepository repository = new DatabaseOrderRepository();
+    IEmailService emailService = new SMTPEmailService();
 
-        // Procesar orden
-        System.out.println("=== Processing Order ===");
-        service.processOrder("john@example.com", 100.0);
+    OrderService service = new OrderService(
+        calculator,
+        repository,
+        emailService,
+        paymentStrategy
+    );
 
-        System.out.println("\n=== Changing Payment Method ===");
-        // Demostrar OCP - cambiar strategy sin modificar código
-        IPaymentService paypalStrategy = new PaypalPaymentService();
-        OrderService orderServicePaypal = new OrderService(
-                calculator,
-                repository,
-                emailService,
-                paypalStrategy
-        );
+    // Procesar orden
+    LOGGER.info("=== Processing Order ===");
+    service.processOrder("john@example.com", 100.0);
 
-        orderServicePaypal.processOrder("jane@example.com", 50.0);
-    }
+    LOGGER.info("\n=== Changing Payment Method ===");
+    // Demostrar OCP - cambiar strategy sin modificar código
+    IPaymentService paypalStrategy = new PaypalPaymentService();
+    OrderService orderServicePaypal = new OrderService(
+        calculator,
+        repository,
+        emailService,
+        paypalStrategy
+    );
+
+    orderServicePaypal.processOrder("jane@example.com", 50.0);
+  }
 
 }

@@ -1,26 +1,32 @@
 package refactored.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class OrderProcessor {
 
-    public void processOrder(String email, double amount) {
-        // TODO: Identificar qué principio SOLID viola cada sección
+  private static final Logger LOGGER = LoggerFactory.getLogger(OrderProcessor.class);
 
-        // Validación de email
-        if (!email.contains("@")) {
-            // ❌ Viola: [¿Cuál principio?]
-        }
+  public void processOrder(String email, double amount) {
 
-        // Cálculo de impuestos
-        double tax = amount * 0.15;
-        // ❌ Viola: [¿Cuál principio?]
-
-        // Guardar en base de datos
-        System.out.println("Saving to database...");
-        // ❌ Viola: [¿Cuál principio?]
-
-        // Enviar email
-        System.out.println("Sending email...");
-        // ❌ Viola: [¿Cuál principio?]
+    // Validación de email
+    if (!email.contains("@")) {
+      // ❌ Viola: [¿Cuál principio?]
+      LOGGER.error("Invalid email");
     }
+
+    // Cálculo de impuestos
+    double tax = amount * 0.15;
+    LOGGER.info("Tax: {}", tax);
+    // ❌ Viola: [¿Cuál principio?]
+
+    // Guardar en base de datos
+    LOGGER.info("Saving to database...");
+    // ❌ Viola: [¿Cuál principio?]
+
+    // Enviar email
+    LOGGER.info("Sending email...");
+    // ❌ Viola: [¿Cuál principio?]
+  }
 
 }

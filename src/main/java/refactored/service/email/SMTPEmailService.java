@@ -1,13 +1,23 @@
 package refactored.service.email;
 
+import java.util.Objects;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import refactored.model.Order;
 
 public class SMTPEmailService implements IEmailService {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(SMTPEmailService.class);
+
     @Override
     public void sendConfirmation(String email, Order order) {
-        // TODO: lógica para enviar email de confirmación
-        System.out.println("Email sent to: " + email);
+        if( email != null || email.isBlank() || !email.contains("@")){
+            throw new IllegalArgumentException("Invalid email");
+        }
+        if(Objects.isNull(order)){
+            throw new IllegalArgumentException("Order must not be null");
+        }
+        LOGGER.info("Email sent to: {}", email);
     }
 
 }

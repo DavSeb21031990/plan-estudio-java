@@ -2,10 +2,11 @@ package refactored.service.tax;
 
 public class StandardTaxCalculatorService implements ITaxCalculatorService {
 
+    public static final double TAX_RATE = 0.15;
+
     @Override
     public double calculateTax(double amount) {
-        // TODO: lógica de cálculo de impuestos
-        return amount * 0.15;
+        return amount * TAX_RATE;
     }
 
 }

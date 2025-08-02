@@ -1,7 +1,7 @@
 package features;
 
-import com.development.attendance.service.features.OrdenStatus;
-import com.development.attendance.service.features.StatusHandler;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 class StatusHandlerTest {
