@@ -1,4 +1,4 @@
-1---
+---
 title: Exception Hierarchy Design Patterns
 description: Guias para Exception Hierarchy Design Patterns
 ---
