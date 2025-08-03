@@ -1,5 +1,7 @@
 # Documentación
 
+> [Documentación](https://davseb21031990.github.io/plan-estudio-java/)
+
 ## Actualización de la documentación en Astro
 - Realizar los cambios
 - Eliminar la carpeta `dist`
