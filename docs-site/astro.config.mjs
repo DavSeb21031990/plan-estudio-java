@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 
-	site: 'https://github.com/DavSeb21031990/plan-estudio-java',
+	site: 'https://davseb21031990.github.io/plan-estudio-java',
 	base: '/plan-estudio-java/',
 
 	integrations: [
