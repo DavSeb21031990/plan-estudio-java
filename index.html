@@ -1,0 +1,370 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar class="astro-bguv2lll"> <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Plan de Estudio | Documentación</title><link rel="canonical" href="https://github.com/plan-estudio-java/"/><link rel="sitemap" href="/plan-estudio-java/sitemap-index.xml"/><link rel="shortcut icon" href="/plan-estudio-java/favicon.svg" type="image/svg+xml"/><meta name="generator" content="Astro v5.12.8"/><meta name="generator" content="Starlight v0.35.2"/><meta property="og:title" content="Plan de Estudio"/><meta property="og:type" content="article"/><meta property="og:url" content="https://github.com/plan-estudio-java/"/><meta property="og:locale" content="en"/><meta property="og:description" content="Plan de Estudio - Java y Spring Boot Avanzado"/><meta property="og:site_name" content="Documentación"/><meta name="twitter:card" content="summary_large_image"/><meta name="description" content="Plan de Estudio - Java y Spring Boot Avanzado"/><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg aria-hidden="true" class="auto astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></template><link rel="stylesheet" href="/plan-estudio-java/_astro/print.DNXP8c50.css" media="print"><link rel="stylesheet" href="/plan-estudio-java/_astro/index.DBvoXU6q.css"><script type="module" src="/plan-estudio-java/_astro/page.7qqag-5g.js"></script></head> <body class="astro-bguv2lll"> <a href="#_top" class="astro-7q3lir66">Skip to content</a>  <div class="page sl-flex astro-vrdttmbt"> <header class="header astro-vrdttmbt"><div class="header astro-kmkmnagf"> <div class="title-wrapper sl-flex astro-kmkmnagf"> <a href="/plan-estudio-java/" class="site-title sl-flex astro-m46x6ez3">  <span class="astro-m46x6ez3" translate="no"> Documentación </span> </a>  </div> <div class="sl-flex print:hidden astro-kmkmnagf"> <site-search class="astro-kmkmnagf astro-v37mnknz" data-translations="{&#34;placeholder&#34;:&#34;Search&#34;}"> <button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" class="astro-v37mnknz"> <svg aria-hidden="true" class="astro-v37mnknz astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg> <span class="sl-hidden md:sl-block astro-v37mnknz" aria-hidden="true">Search</span> <kbd class="sl-hidden md:sl-flex astro-v37mnknz" style="display: none;"> <kbd class="astro-v37mnknz">Ctrl</kbd><kbd class="astro-v37mnknz">K</kbd> </kbd> </button> <dialog style="padding:0" aria-label="Search" class="astro-v37mnknz"> <div class="dialog-frame sl-flex astro-v37mnknz">  <button data-close-modal class="sl-flex md:sl-hidden astro-v37mnknz"> Cancel </button> <div class="search-container astro-v37mnknz"> <div id="starlight__search" class="astro-v37mnknz"></div> </div> </div> </dialog> </site-search>  <script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script> <script type="module" src="/plan-estudio-java/_astro/Search.astro_astro_type_script_index_0_lang.BgeMPGfB.js"></script>   </div> <div class="sl-hidden md:sl-flex print:hidden right-group astro-kmkmnagf"> <div class="sl-flex social-icons astro-kmkmnagf"> <a href="https://github.com/withastro/starlight" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">GitHub</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.08 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3Z"/></svg></a> </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg> <select value="auto" autocomplete="off" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg> </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script> <script type="module">const r="starlight-theme",o=e=>e==="auto"||e==="dark"||e==="light"?e:"auto",c=()=>o(typeof localStorage<"u"&&localStorage.getItem(r));function n(e){typeof localStorage<"u"&&localStorage.setItem(r,e==="light"||e==="dark"?e:"")}const l=()=>matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";function t(e){StarlightThemeProvider.updatePickers(e),document.documentElement.dataset.theme=e==="auto"?l():e,n(e)}matchMedia("(prefers-color-scheme: light)").addEventListener("change",()=>{c()==="auto"&&t("auto")});class s extends HTMLElement{constructor(){super(),t(c()),this.querySelector("select")?.addEventListener("change",a=>{a.currentTarget instanceof HTMLSelectElement&&t(o(a.currentTarget.value))})}}customElements.define("starlight-theme-select",s);</script> <script type="module">class s extends HTMLElement{constructor(){super();const e=this.querySelector("select");e&&(e.addEventListener("change",t=>{t.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=t.currentTarget.value)}),window.addEventListener("pageshow",t=>{if(!t.persisted)return;const n=e.querySelector("option[selected]")?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}}customElements.define("starlight-lang-select",s);</script> </div> </div> </header> <nav class="sidebar print:hidden astro-vrdttmbt" aria-label="Main"> <starlight-menu-button class="print:hidden astro-jif73yzw"> <button aria-expanded="false" aria-label="Menu" aria-controls="starlight__sidebar" class="sl-flex md:sl-hidden astro-jif73yzw"> <svg aria-hidden="true" class="open-menu astro-jif73yzw astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg> <svg aria-hidden="true" class="close-menu astro-jif73yzw astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="m13.41 12 6.3-6.29a1.004 1.004 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 0 1.42.998.998 0 0 0 1.42 0l6.29-6.3 6.29 6.3a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12Z"/></svg> </button> </starlight-menu-button> <script type="module">class s extends HTMLElement{constructor(){super(),this.btn=this.querySelector("button"),this.btn.addEventListener("click",()=>this.toggleExpanded());const t=this.closest("nav");t&&t.addEventListener("keyup",e=>this.closeOnEscape(e))}setExpanded(t){this.setAttribute("aria-expanded",String(t)),document.body.toggleAttribute("data-mobile-menu-expanded",t)}toggleExpanded(){this.setExpanded(this.getAttribute("aria-expanded")!=="true")}closeOnEscape(t){t.code==="Escape"&&(this.setExpanded(!1),this.btn.focus())}}customElements.define("starlight-menu-button",s);</script>   <div id="starlight__sidebar" class="sidebar-pane astro-vrdttmbt"> <div class="sidebar-content sl-flex astro-vrdttmbt"> <sl-sidebar-state-persist data-hash="124x4z7" class="astro-kku4brbg"> <script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script>  <ul class="top-level astro-3ii7xxms"> <li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <sl-sidebar-restore data-index="0"></sl-sidebar-restore> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Guides</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/home/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Guias</span>  </a> </li><li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <sl-sidebar-restore data-index="1"></sl-sidebar-restore> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Java</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/home/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Introducción</span>  </a> </li><li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <sl-sidebar-restore data-index="2"></sl-sidebar-restore> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Features</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/features/record-class/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Record Class</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/features/text-blocks/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Text Blocks</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/features/pattern-matching/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Pattern Matching</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/features/switch-expressions/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Switch Expressions</span>  </a> </li> </ul>  </details> </li><li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <sl-sidebar-restore data-index="3"></sl-sidebar-restore> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Principios SOLID</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/solid/single-responsability/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Single Responsability</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/solid/open-closed/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Open - Closed</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/solid/liskov-substitution/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Liskov Substitution</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/solid/interface-segregation/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Interface Segregation</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/solid/dependency-inversion/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Dependency Inversion</span>  </a> </li> </ul>  </details> </li><li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <sl-sidebar-restore data-index="4"></sl-sidebar-restore> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Error Handling</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/error-handle/error-handling-philosophy/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Error handling philosophy</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/error-handle/code-formatting-consistency/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Code Formatting Consistency</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/plan-estudio-java/guias/java/error-handle/exception-hierarchy-design-patterns/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Exception Hierarchy Design Patterns</span>  </a> </li> </ul>  </details> </li> </ul>  </details> </li> </ul>  </details> </li><li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <sl-sidebar-restore data-index="5"></sl-sidebar-restore> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Reference</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-3ii7xxms">  </ul>  </details> </li> </ul>   <script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script> </sl-sidebar-state-persist>  <div class="md:sl-hidden"> <div class="mobile-preferences sl-flex astro-wu23bvmt"> <div class="social-icons astro-wu23bvmt"> <a href="https://github.com/withastro/starlight" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">GitHub</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.08 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3Z"/></svg></a> </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg> <select value="auto" autocomplete="off" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg> </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script>   </div>  </div> </div> </div> </nav> <div class="main-frame astro-vrdttmbt">  <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="lg:sl-flex astro-67yu43on"> <aside class="right-sidebar-container print:hidden astro-67yu43on"> <div class="right-sidebar astro-67yu43on"> <div class="lg:sl-hidden astro-pb3aqygn"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-doynk5tl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-doynk5tl"><details id="starlight__mobile-toc" class="astro-doynk5tl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-doynk5tl"><div class="toggle sl-flex astro-doynk5tl">On this page<svg aria-hidden="true" class="caret astro-doynk5tl astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></div><span class="display-current astro-doynk5tl"></span></summary><div class="dropdown astro-doynk5tl"><ul class="isMobile astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#enfoque-en-concurrencia-y-grandes-volúmenes-de-datos" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Enfoque en Concurrencia y Grandes Volúmenes de Datos</span> </a> <ul class="isMobile astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#fase-1-fundamentos-avanzados-de-java-4-6-semanas" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Fase 1: Fundamentos Avanzados de Java (4-6 semanas)</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#fase-2-spring-boot-intermedio-avanzado-6-8-semanas" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Fase 2: Spring Boot Intermedio-Avanzado (6-8 semanas)</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#fase-3-arquitectura-y-rendimiento-6-8-semanas" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Fase 3: Arquitectura y Rendimiento (6-8 semanas)</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#fase-4-proyectos-prácticos-8-10-semanas" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Fase 4: Proyectos Prácticos (8-10 semanas)</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#recursos-recomendados" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Recursos Recomendados</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#cronograma-sugerido" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Cronograma Sugerido</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#evaluación-del-progreso" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Evaluación del Progreso</span> </a>  </li> </ul>  </li> </ul> </div></details></nav></mobile-starlight-toc><script type="module" src="/plan-estudio-java/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C181hMzK.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-pb3aqygn"><div class="sl-container astro-pb3aqygn"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#enfoque-en-concurrencia-y-grandes-volúmenes-de-datos" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Enfoque en Concurrencia y Grandes Volúmenes de Datos</span> </a> <ul class="astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#fase-1-fundamentos-avanzados-de-java-4-6-semanas" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Fase 1: Fundamentos Avanzados de Java (4-6 semanas)</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#fase-2-spring-boot-intermedio-avanzado-6-8-semanas" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Fase 2: Spring Boot Intermedio-Avanzado (6-8 semanas)</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#fase-3-arquitectura-y-rendimiento-6-8-semanas" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Fase 3: Arquitectura y Rendimiento (6-8 semanas)</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#fase-4-proyectos-prácticos-8-10-semanas" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Fase 4: Proyectos Prácticos (8-10 semanas)</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#recursos-recomendados" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Recursos Recomendados</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#cronograma-sugerido" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Cronograma Sugerido</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#evaluación-del-progreso" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Evaluación del Progreso</span> </a>  </li> </ul>  </li> </ul> </nav></starlight-toc><script type="module" src="/plan-estudio-java/_astro/TableOfContents.astro_astro_type_script_index_0_lang.CKWWgpjV.js"></script></div></div> </div> </aside> <div class="main-pane astro-67yu43on">  <main data-pagefind-body class="astro-bguv2lll" lang="en" dir="ltr">    <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <h1 id="_top" class="astro-j6tvhyss">Plan de Estudio</h1>  </div> </div>  <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <div class="sl-markdown-content"> <div class="sl-heading-wrapper level-h1"><h1 id="plan-de-estudio-java-y-spring-boot-avanzado">Plan de Estudio: Java y Spring Boot Avanzado</h1><a class="sl-anchor-link" href="#plan-de-estudio-java-y-spring-boot-avanzado"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Plan de Estudio: Java y Spring Boot Avanzado”</span></a></div>
+<div class="sl-heading-wrapper level-h2"><h2 id="enfoque-en-concurrencia-y-grandes-volúmenes-de-datos">Enfoque en Concurrencia y Grandes Volúmenes de Datos</h2><a class="sl-anchor-link" href="#enfoque-en-concurrencia-y-grandes-volúmenes-de-datos"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Enfoque en Concurrencia y Grandes Volúmenes de Datos”</span></a></div>
+<div class="sl-heading-wrapper level-h3"><h3 id="fase-1-fundamentos-avanzados-de-java-4-6-semanas">Fase 1: Fundamentos Avanzados de Java (4-6 semanas)</h3><a class="sl-anchor-link" href="#fase-1-fundamentos-avanzados-de-java-4-6-semanas"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Fase 1: Fundamentos Avanzados de Java (4-6 semanas)”</span></a></div>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-1-2-concurrencia-y-programación-multi-hilo">Semana 1-2: Concurrencia y Programación Multi-hilo</h4><a class="sl-anchor-link" href="#semana-1-2-concurrencia-y-programación-multi-hilo"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 1-2: Concurrencia y Programación Multi-hilo”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li>Threads, Runnable, Callable</li>
+<li>Sincronización: synchronized, locks, semáforos</li>
+<li>Executor Framework y ThreadPool</li>
+<li>CompletableFuture y programación asíncrona</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Implementar un sistema de procesamiento de archivos concurrente</li>
+<li>Crear un pool de conexiones thread-safe</li>
+<li>Desarrollar un cache distribuido básico</li>
+</ul>
+<p><strong>Recursos:</strong></p>
+<ul>
+<li>“Java Concurrency in Practice” - Brian Goetz</li>
+<li>Oracle Java Concurrency Tutorial</li>
+<li>Baeldung Concurrency articles</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-3-4-colecciones-avanzadas-y-estructuras-de-datos">Semana 3-4: Colecciones Avanzadas y Estructuras de Datos</h4><a class="sl-anchor-link" href="#semana-3-4-colecciones-avanzadas-y-estructuras-de-datos"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 3-4: Colecciones Avanzadas y Estructuras de Datos”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li>ConcurrentHashMap, CopyOnWriteArrayList</li>
+<li>Estructuras de datos lock-free</li>
+<li>Memory model de Java</li>
+<li>Garbage Collection y optimización de memoria</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Implementar una estructura de datos concurrente personalizada</li>
+<li>Optimizar aplicaciones con high throughput</li>
+<li>Análisis de memory leaks y tuning de GC</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-5-6-stream-api-y-programación-funcional">Semana 5-6: Stream API y Programación Funcional</h4><a class="sl-anchor-link" href="#semana-5-6-stream-api-y-programación-funcional"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 5-6: Stream API y Programación Funcional”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li>Parallel Streams y performance</li>
+<li>Collectors personalizados</li>
+<li>Optional y manejo de null safety</li>
+<li>Reactive Streams (Flow API)</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Procesar datasets grandes con parallel streams</li>
+<li>Implementar pipelines de transformación de datos</li>
+<li>Crear collectors personalizados para agregaciones complejas</li>
+</ul>
+<div class="sl-heading-wrapper level-h3"><h3 id="fase-2-spring-boot-intermedio-avanzado-6-8-semanas">Fase 2: Spring Boot Intermedio-Avanzado (6-8 semanas)</h3><a class="sl-anchor-link" href="#fase-2-spring-boot-intermedio-avanzado-6-8-semanas"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Fase 2: Spring Boot Intermedio-Avanzado (6-8 semanas)”</span></a></div>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-7-8-spring-core-avanzado">Semana 7-8: Spring Core Avanzado</h4><a class="sl-anchor-link" href="#semana-7-8-spring-core-avanzado"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 7-8: Spring Core Avanzado”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li>IoC Container profundo</li>
+<li>Bean lifecycle y custom scopes</li>
+<li>Profiles y configuración por ambiente</li>
+<li>SpEL (Spring Expression Language)</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Crear custom annotations y aspectos</li>
+<li>Implementar factory beans personalizados</li>
+<li>Configurar perfiles complejos para diferentes entornos</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-9-11-spring-data-y-persistencia-avanzada">Semana 9-11: Spring Data y Persistencia Avanzada</h4><a class="sl-anchor-link" href="#semana-9-11-spring-data-y-persistencia-avanzada"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 9-11: Spring Data y Persistencia Avanzada”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li>JPA avanzado: criterias, specifications, projections</li>
+<li>Custom repositories y query methods</li>
+<li>Transacciones: @Transactional, propagation, isolation</li>
+<li>Connection pooling (HikariCP) y optimización de conexiones</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Implementar paginación eficiente para millones de registros</li>
+<li>Crear auditoría automática de entidades</li>
+<li>Optimizar queries N+1 y lazy loading</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-12-13-optimización-de-consultas-y-grandes-volúmenes">Semana 12-13: Optimización de Consultas y Grandes Volúmenes</h4><a class="sl-anchor-link" href="#semana-12-13-optimización-de-consultas-y-grandes-volúmenes"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 12-13: Optimización de Consultas y Grandes Volúmenes”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li><strong>JdbcTemplate y NamedParameterJdbcTemplate:</strong> Consultas nativas optimizadas</li>
+<li><strong>QueryDSL:</strong> Type-safe queries y consultas dinámicas complejas</li>
+<li><strong>Criteria API:</strong> Construcción programática de queries</li>
+<li><strong>Native Queries:</strong> Cuando y cómo usar SQL nativo efectivamente</li>
+<li><strong>Batch Processing:</strong> Spring Batch para procesamiento masivo</li>
+<li><strong>Streaming ResultSet:</strong> Procesamiento de millones de registros sin OOM</li>
+</ul>
+<p><strong>Técnicas de optimización:</strong></p>
+<ul>
+<li>Índices compuestos y estrategias de indexación</li>
+<li>Particionamiento de tablas (horizontal/vertical)</li>
+<li>Read replicas y distribución de carga de lectura</li>
+<li>Query hints y plan de ejecución</li>
+<li>Pagination patterns: cursor-based vs offset-based</li>
+<li>Projection queries para reducir transferencia de datos</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Implementar sistema de reporting con QueryDSL para consultas complejas</li>
+<li>Crear job de Spring Batch para procesar 10M+ registros</li>
+<li>Optimizar consultas existentes usando EXPLAIN PLAN</li>
+<li>Implementar streaming de datos con JdbcTemplate</li>
+<li>Desarrollar sistema de cache inteligente para queries frecuentes</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-14-15-estrategias-de-carga-masiva-de-datos">Semana 14-15: Estrategias de Carga Masiva de Datos</h4><a class="sl-anchor-link" href="#semana-14-15-estrategias-de-carga-masiva-de-datos"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 14-15: Estrategias de Carga Masiva de Datos”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li><strong>Bulk Insert Strategies:</strong>
+<ul>
+<li>JDBC Batch inserts</li>
+<li>JPA Batch processing (@BatchSize)</li>
+<li>Native bulk operations (COPY, LOAD DATA)</li>
+</ul>
+</li>
+<li><strong>ETL Patterns con Spring Batch:</strong>
+<ul>
+<li>ItemReader, ItemProcessor, ItemWriter</li>
+<li>Chunk-based processing</li>
+<li>Parallel processing y partitioning</li>
+<li>Skip policies y error handling</li>
+</ul>
+</li>
+<li><strong>Streaming Data Processing:</strong>
+<ul>
+<li>Reactive streams para datos continuos</li>
+<li>Backpressure handling</li>
+<li>Flow control en pipelines de datos</li>
+</ul>
+</li>
+</ul>
+<p><strong>Técnicas avanzadas:</strong></p>
+<ul>
+<li>UPSERT operations eficientes</li>
+<li>Temporary tables para staging</li>
+<li>Lock-free bulk operations</li>
+<li>Memory-mapped files para cargas ultra rápidas</li>
+<li>Compression strategies para transferencia</li>
+<li>Incremental data loading patterns</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Implementar carga masiva de 50M+ registros optimizada</li>
+<li>Crear pipeline ETL completo con Spring Batch</li>
+<li>Desarrollar sistema de sincronización incremental</li>
+<li>Implementar streaming processor para datos en tiempo real</li>
+<li>Optimizar memory footprint en operaciones masivas</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-16-17-spring-boot-actuator-y-microservicios">Semana 16-17: Spring Boot Actuator y Microservicios</h4><a class="sl-anchor-link" href="#semana-16-17-spring-boot-actuator-y-microservicios"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 16-17: Spring Boot Actuator y Microservicios”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li>Health checks personalizados</li>
+<li>Metrics con Micrometer</li>
+<li>Distributed tracing</li>
+<li>Configuration management</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Implementar métricas de negocio personalizadas</li>
+<li>Crear health indicators para dependencias externas</li>
+<li>Configurar distributed tracing con Zipkin/Jaeger</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-18-19-programación-reactiva-con-spring-webflux">Semana 18-19: Programación Reactiva con Spring WebFlux</h4><a class="sl-anchor-link" href="#semana-18-19-programación-reactiva-con-spring-webflux"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 18-19: Programación Reactiva con Spring WebFlux”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li>Mono y Flux</li>
+<li>Backpressure y flow control</li>
+<li>WebClient reactivo</li>
+<li>R2DBC para bases de datos reactivas</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Migrar endpoint REST a WebFlux</li>
+<li>Implementar streaming de datos en tiempo real</li>
+<li>Crear pipeline reactivo completo</li>
+</ul>
+<div class="sl-heading-wrapper level-h3"><h3 id="fase-3-arquitectura-y-rendimiento-6-8-semanas">Fase 3: Arquitectura y Rendimiento (6-8 semanas)</h3><a class="sl-anchor-link" href="#fase-3-arquitectura-y-rendimiento-6-8-semanas"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Fase 3: Arquitectura y Rendimiento (6-8 semanas)”</span></a></div>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-20-21-procesamiento-asíncrono-y-colas">Semana 20-21: Procesamiento Asíncrono y Colas</h4><a class="sl-anchor-link" href="#semana-20-21-procesamiento-asíncrono-y-colas"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 20-21: Procesamiento Asíncrono y Colas”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li>@Async y TaskExecutor</li>
+<li>Message queues (RabbitMQ, Apache Kafka)</li>
+<li>Event-driven architecture</li>
+<li>Saga pattern para transacciones distribuidas</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Implementar procesamiento asíncrono de órdenes</li>
+<li>Crear sistema de notificaciones con colas</li>
+<li>Desarrollar event sourcing básico</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-22-23-caching-y-optimización">Semana 22-23: Caching y Optimización</h4><a class="sl-anchor-link" href="#semana-22-23-caching-y-optimización"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 22-23: Caching y Optimización”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li>Spring Cache abstraction</li>
+<li>Redis como cache distribuido</li>
+<li>Cache invalidation strategies</li>
+<li>CDN y static content optimization</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Implementar cache multi-nivel</li>
+<li>Crear estrategias de invalidación inteligentes</li>
+<li>Optimizar aplicación para 10k+ RPS</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="semana-24-25-monitoreo-y-observabilidad">Semana 24-25: Monitoreo y Observabilidad</h4><a class="sl-anchor-link" href="#semana-24-25-monitoreo-y-observabilidad"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Semana 24-25: Monitoreo y Observabilidad”</span></a></div>
+<p><strong>Conceptos clave:</strong></p>
+<ul>
+<li>APM tools (New Relic, AppDynamics)</li>
+<li>Logging estructurado (Logback, ELK Stack)</li>
+<li>Alerting y SLI/SLO</li>
+<li>Performance profiling</li>
+</ul>
+<p><strong>Práctica:</strong></p>
+<ul>
+<li>Implementar observabilidad completa</li>
+<li>Crear dashboards de métricas de negocio</li>
+<li>Establecer alertas proactivas</li>
+</ul>
+<div class="sl-heading-wrapper level-h3"><h3 id="fase-4-proyectos-prácticos-8-10-semanas">Fase 4: Proyectos Prácticos (8-10 semanas)</h3><a class="sl-anchor-link" href="#fase-4-proyectos-prácticos-8-10-semanas"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Fase 4: Proyectos Prácticos (8-10 semanas)”</span></a></div>
+<div class="sl-heading-wrapper level-h4"><h4 id="proyecto-1-sistema-de-procesamiento-de-datos-masivos-4-5-semanas">Proyecto 1: Sistema de Procesamiento de Datos Masivos (4-5 semanas)</h4><a class="sl-anchor-link" href="#proyecto-1-sistema-de-procesamiento-de-datos-masivos-4-5-semanas"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Proyecto 1: Sistema de Procesamiento de Datos Masivos (4-5 semanas)”</span></a></div>
+<p><strong>Características:</strong></p>
+<ul>
+<li>Ingesta de millones de registros por día</li>
+<li>Procesamiento en batch y tiempo real</li>
+<li>APIs REST y reactive</li>
+<li>Cache distribuido</li>
+<li>Métricas y monitoreo</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="proyecto-2-plataforma-de-microservicios-4-5-semanas">Proyecto 2: Plataforma de Microservicios (4-5 semanas)</h4><a class="sl-anchor-link" href="#proyecto-2-plataforma-de-microservicios-4-5-semanas"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Proyecto 2: Plataforma de Microservicios (4-5 semanas)”</span></a></div>
+<p><strong>Características:</strong></p>
+<ul>
+<li>3-5 microservicios comunicándose</li>
+<li>Service discovery y load balancing</li>
+<li>Circuit breakers y resilience patterns</li>
+<li>Distributed tracing</li>
+<li>Event-driven communication</li>
+</ul>
+<div class="sl-heading-wrapper level-h3"><h3 id="recursos-recomendados">Recursos Recomendados</h3><a class="sl-anchor-link" href="#recursos-recomendados"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Recursos Recomendados”</span></a></div>
+<p><strong>Libros:</strong></p>
+<ul>
+<li>“Spring in Action” 6th Edition - Craig Walls</li>
+<li>“Spring Boot in Practice” - Somnath Musib</li>
+<li>“Java Performance: The Definitive Guide” - Scott Oaks</li>
+<li>“Building Microservices” - Sam Newman</li>
+<li><strong>“Spring Data Modern Data Access for Enterprise Java” - Mark Pollack</strong></li>
+<li><strong>“Java Persistence with Spring Data and Hibernate” - Catalin Tudose</strong></li>
+<li><strong>“SQL Performance Explained” - Markus Winand</strong></li>
+</ul>
+<p><strong>Cursos Online:</strong></p>
+<ul>
+<li>Spring Framework Master Class - Udemy</li>
+<li>Java Multithreading, Concurrency &#x26; Performance - Udemy</li>
+<li>Spring Boot Microservices with Spring Cloud - Pluralsight</li>
+</ul>
+<p><strong>Herramientas para Practicar:</strong></p>
+<ul>
+<li>Docker y Docker Compose</li>
+<li>Apache Kafka</li>
+<li>Redis</li>
+<li>PostgreSQL/MySQL</li>
+<li>Prometheus + Grafana</li>
+<li>IntelliJ IDEA Ultimate</li>
+<li><strong>QueryDSL APT plugin</strong></li>
+<li><strong>Spring Batch Admin</strong></li>
+<li><strong>Database profiling tools (pgAdmin, MySQL Workbench)</strong></li>
+<li><strong>JProfiler o VisualVM para memory profiling</strong></li>
+</ul>
+<div class="sl-heading-wrapper level-h3"><h3 id="cronograma-sugerido">Cronograma Sugerido</h3><a class="sl-anchor-link" href="#cronograma-sugerido"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Cronograma Sugerido”</span></a></div>
+<p><strong>Dedicación recomendada:</strong> 8-12 horas por semana <strong>Duración total:</strong> 25-27 semanas (6-7 meses)</p>
+<p><strong>Distribución semanal:</strong></p>
+<ul>
+<li>40% teoría y lectura</li>
+<li>40% práctica hands-on</li>
+<li>20% proyectos personales</li>
+</ul>
+<div class="sl-heading-wrapper level-h3"><h3 id="evaluación-del-progreso">Evaluación del Progreso</h3><a class="sl-anchor-link" href="#evaluación-del-progreso"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Evaluación del Progreso”</span></a></div>
+<p><strong>Hitos mensuales:</strong></p>
+<ul>
+<li>Mes 1: Dominio de concurrencia en Java</li>
+<li>Mes 2: Proficiencia en Spring Boot avanzado</li>
+<li>Mes 3: <strong>Maestría en optimización de consultas y manejo de datos masivos</strong></li>
+<li>Mes 4: Arquitectura de aplicaciones escalables</li>
+<li>Mes 5: Implementación de microservicios</li>
+<li>Mes 6-7: Proyectos portfolio y optimización</li>
+</ul>
+<p><strong>Indicadores de éxito:</strong></p>
+<ul>
+<li>Capacidad de diseñar sistemas que manejen 100k+ requests/day</li>
+<li>Implementación eficiente de patrones de concurrencia</li>
+<li>Conocimiento profundo del ecosistema Spring</li>
+<li>Habilidad para debuggear y optimizar aplicaciones en producción</li>
+<li><strong>Expertise en optimización de queries para datasets de 100M+ registros</strong></li>
+<li><strong>Dominio de técnicas de carga masiva y ETL con Spring Batch</strong></li>
+<li><strong>Capacidad de implementar streaming de datos eficiente</strong></li>
+</ul> </div> <footer class="sl-flex astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n">   </div> <div class="pagination-links print:hidden astro-u2l5gyhi" dir="ltr">   </div>   </footer>  </div> </div>   </main> </div> </div>  </div> </div>  </body></html>
