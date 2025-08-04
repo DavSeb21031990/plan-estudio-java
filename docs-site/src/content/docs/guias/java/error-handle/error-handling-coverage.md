@@ -1,5 +1,5 @@
 ---
-title: 'Error Handling Coverage',
+title: 'Error Handling Coverage'
 description: 'Guia para cobertura en el manejo de errores'
 ---
 

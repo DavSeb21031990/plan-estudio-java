@@ -1,5 +1,5 @@
 ---
-title: 'Checked vs Unchecked exceptions strategy',
+title: 'Checked vs Unchecked exceptions strategy'
 description: 'Guia para la estrategia - Checked vs Unchecked exceptions strategy'
 ---
 
