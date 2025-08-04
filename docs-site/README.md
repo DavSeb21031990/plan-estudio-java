@@ -27,6 +27,12 @@ Inside of your Astro + Starlight project, you'll see the following folders and f
 - Los recursos estáticos, como favicons pueden ser colocados en el directorio `public/`.
 - Se crea el archivo `.nojekull` para que `Github Pages` considere los archivos `_astro`
 
+## Configuración para desplegar en Github Pages
+- En el archivo `astro.config.mjs` se realiza la siguiente configuración:
+````json
+    site: 'https://<User-Github>.github.io/<Repositorio>', 
+    base: '/<Repositorio>/',
+````
 ## 🧞 Comandos
 
 Todos los comandos se ejecutan desde la raíz del proyecto, desde un terminal:
