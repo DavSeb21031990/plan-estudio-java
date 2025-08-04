@@ -97,7 +97,7 @@ export default defineConfig({
                     },
                     {
                       label: 'Checked vs Unchecked Exceptions Strategy',
-                      slug: 'guias/java/error-handle/exception-hierarchy-design-patterns'
+                      slug: 'guias/java/error-handle/checked-vs-unchecked-exceptions-strategy'
                     },
 
                   ]
