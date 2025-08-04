@@ -2,6 +2,7 @@ package refactored.service.order;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import refactored.exception.TechnicalException;
 import refactored.model.Order;
 import refactored.repository.order.IOrderRepository;
 import refactored.service.email.IEmailService;
@@ -59,12 +60,13 @@ public class OrderService implements IOrderService {
     validateInputs(email, amount);
 
     double tax = this.taxCalculator.calculateTax(amount);
-    boolean paymentSuccess = this.paymentStrategy.processPayment(amount + tax);
+    this.paymentStrategy.processPayment(amount + tax);
 
-    if (paymentSuccess) {
+    try{
       generateOrder(email, amount, tax);
-    } else {
-      throw new IllegalStateException("Payment failed");
+    }catch (TechnicalException e){
+      LOGGER.error("Error processing order: {}", e.getMessage());
+      throw e;
     }
 
   }

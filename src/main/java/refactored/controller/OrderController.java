@@ -3,9 +3,9 @@ package refactored.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class OrderProcessor {
+public class OrderController {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(OrderProcessor.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(OrderController.class);
 
   public void processOrder(String email, double amount) {
 
